@@ -58,7 +58,7 @@ Join Us In Phase -2 to build Moviebuddy that would in-turn help us during this P
 4. [Poorva Kulkarni](mailto:pnkulkar@ncsu.edu) (pnkulkar)<br>
 5. [Rohan Pillai](mailto:rspillai@ncsu.edu) (rspillai)<br>
 
-# Original Contributors</br>
+## Original Contributors</br>
 Ashish Sadanand Rajpurohit</br>
 Jayesh Chandrashekhar Jakkani</br>
 Katta Rishabh</br>
