@@ -1,6 +1,4 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)</br>
-[![DOI](https://zenodo.org/badge/295570872.svg)](https://zenodo.org/badge/latestdoi/295570872)</br>
-[![Build Status](https://travis-ci.org/jayeshjakkani/SE21-project.svg?branch=master)](https://travis-ci.org/jayeshjakkani/SE21-project)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![DOI](https://zenodo.org/badge/295570872.svg)](https://zenodo.org/badge/latestdoi/295570872) [![Build Status](https://travis-ci.org/jayeshjakkani/SE21-project.svg?branch=master)](https://travis-ci.org/jayeshjakkani/SE21-project)
 
 # SE21-Project</br>
 Movie Recommendation System (Moviebuddy)
@@ -53,7 +51,14 @@ Now, according to the movie recommendation system, it uses Collaborative Filteri
 </br>
 Join Us In Phase -2 to build Moviebuddy that would in-turn help us during this Pandemic. Cheers!</br>
 
-# Group Members</br>
+## Group 4 Details:
+1. [Alisha Shahane](mailto:asshahan@ncsu.edu) (asshahan)<br>
+2. [Shruti Kangle](mailto:sskangle@ncsu.edu) (sskangle)<br>
+3. [Bhoomi Shah](mailto:bshah2@ncsu.edu) (bshah2)<br>
+4. [Poorva Kulkarni](mailto:pnkulkar@ncsu.edu) (pnkulkar)<br>
+5. [Rohan Pillai](mailto:rspillai@ncsu.edu) (rspillai)<br>
+
+# Original Contributors</br>
 Ashish Sadanand Rajpurohit</br>
 Jayesh Chandrashekhar Jakkani</br>
 Katta Rishabh</br>
