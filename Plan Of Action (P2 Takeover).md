@@ -1,6 +1,8 @@
 # Project 2 Plan of Work
 
 ## Current Status
+- Functionality for user based and item based reccomendation implemented.
+- Item based reccomendation returns same movies for all user ids.
 
 ## Coding Tasks
 
