@@ -14,6 +14,6 @@
 ## Testing Tasks
 
 ## Plan of Work (Task Allocation):
-Improve the recommendations for item-based system - Alisha Shahane, Rohan Pillai
-Combine both content based and collaborative filtering - Poorva Kulkarni, Shruti Kangle
-User Interface and Aesthetics - Bhoomi Shah
+- Improve the recommendations for item-based system - Alisha Shahane, Rohan Pillai
+- Combine both content based and collaborative filtering - Poorva Kulkarni, Shruti Kangle
+- User Interface and Aesthetics - Bhoomi Shah
