@@ -12,6 +12,8 @@
 - Adding user interface to accept user input and display results
 
 ## Testing Tasks
+- Add unit tests for new functionality
+- Review code coverage for the newly added code
 
 ## Plan of Work (Task Allocation):
 - Improve the recommendations for item-based system - Alisha Shahane, Rohan Pillai
