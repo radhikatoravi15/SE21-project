@@ -12,7 +12,7 @@
 
 ## Code of Conduct:
 
-* Please go through the [link](https://github.com/jayeshjakkani/SE21-project/blob/master/CODE_OF_CONDUCT.md) before you begin contributing.
+* Please go through the [link](https://github.com/bhoomi2807/SE21-project/blob/master/CODE_OF_CONDUCT.md) before you begin contributing.
 
 ## Pull Request Submission Guidelines
 
