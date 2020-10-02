@@ -7,7 +7,8 @@
 
 ## Coding Tasks
 - Implement code for item-based recommendation to return top 25 movies
-- Adding genre as a new paramter along with user id to provide genre based recommendations
+- Adding genre as a new parameter along with user id to provide genre based recommendations
+- Add new function for the hybrid recommendation approach
 - Adding user interface to accept user input and display results
 
 ## Testing Tasks
