@@ -17,5 +17,5 @@
 
 ## Plan of Work (Task Allocation):
 - Improve the recommendations for item-based system - Alisha Shahane, Rohan Pillai
-- Combine both content based and collaborative filtering - Poorva Kulkarni, Shruti Kangle
-- User Interface and Aesthetics - Bhoomi Shah
+- Combine both content based and collaborative filtering recommendation algorithm - Poorva Kulkarni, Shruti Kangle
+- Creation of User Interface and aesthetics - Bhoomi Shah
