@@ -4,7 +4,8 @@
 Movie Recommendation System (Moviebuddy)
 
 # Project Video</br>
-Our video can be found [here on YouTube](https://www.youtube.com/watch?v=7oV19DRxJec).
+Our video can be found [here on YouTube](https://www.youtube.com/watch?v=7oV19DRxJec).<br/>
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/7oV19DRxJec/0.jpg)](https://www.youtube.com/watch?v=7oV19DRxJec)
 
 
 # Documentation</br>
