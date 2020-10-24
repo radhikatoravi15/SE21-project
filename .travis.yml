@@ -4,10 +4,13 @@ python:
 cache: pip
 install:
   - pip install -r requirements.txt
-  - pip install coverage
-  - pip install codecov
+  - pip install pytest pytest-cov
+  - pip install coveralls
 script:
   - python3 Code/item_based.py 547
   - python3 Code/user_based.py 547
   - python3 test/item_testcases.py
   - python3 test/user_testcases.py
+  
+after_success:
+  - coveralls
