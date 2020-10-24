@@ -4,7 +4,7 @@
 Movie Recommendation System (Moviebuddy)
 
 # Project Video</br>
-[Access the Moviebuddy video Here](https://www.youtube.com/watch?v=VSHciMDTlO8)
+[https://www.youtube.com/watch?v=7oV19DRxJec]
 
 # Documentation</br>
 Recommend a user with a set of movies that they might like by considering the movies they have liked in the past and also considering the movies liked by other users that have a similar taste like them.</br>
