@@ -2,33 +2,27 @@
 
 * If you would like to contribute and collaborate for this repository, then please intimate us through email at shahbhoomi96@gmail.com
 
-## Purpose of Contributing:
+# Contributing to this repository 🔊🔓💻
 
-* To develop our product and take it to next level.
-* To enhance the already exisiting feature.
-* To make the product more efficient.
-* To resolve critical bugs encountered.
-* Helping the community by delivering a better product.
+## What to keep in mind while adding to this repository ? ✔🎫
 
-## Code of Conduct:
+- [Create a branch](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-and-deleting-branches-within-your-repository) for adding your changes before merging to the master
+- [Compare and review changes](https://docs.github.com/en/github/committing-changes-to-your-project/viewing-and-comparing-commits) before commiting your changes
+- Get permission from two other developers working on this project before commiting
+- Update README files whenever required to reflect the information related to your modifications
+- Update [requirements.txt](https://github.com/bhoomi2807/SE21-project/edit/blob/requirements.txt) in case you have used new libraries or plugins in your code
+- Use a consistent [coding style](https://www.python.org/dev/peps/pep-0008/)
+- Add meaningful comments to your code 📜
+- Add appropriate unit tests for the module you contribute to!
+- Ensure any install or build dependencies are removed before the end of the layer when doing a build.
+- Follow the directory structure to keep code and data files in different folders.
 
-* Please go through the [link](https://github.com/bhoomi2807/SE21-project/blob/master/CODE_OF_CONDUCT.md) before you begin contributing.
 
-## Pull Request Submission Guidelines
 
-* Installing Git makes contributing to the repository easier
-* To start contributing to the repository make sure you fork the repository first
-* Create a new branch to develop the project 
-* Write code to contribute and commit to create a pull request and merge it with the repository after it passes the CI build check
+### You are contributing to this repository which is under MIT License: 🏅
+Refer [LICENSE.md](https://github.com/bhoomi2807/SE21-project/blob/master/LICENSE.md) for more information
 
-## Code Style Guide 
-
-* Python language(Version 3.7) has been used to build this project repository
-* Make sure to add the functionalities in the form of modules
-* Any code which is not tested should be committed to the test codes in the code folder. After they are successfully tested, the  main code can be updated.
-* Variable Names should be self-explanatory
-* Comment the code so that a new contributor can understand the functionality of the modules easily
-* PEP8 is used as linter
+### Please contribute following the [Code of Conduct](https://github.com/bhoomi2807/SE21-project/blob/master/CODE_OF_CONDUCT.md) for this repository.
 
 
 
