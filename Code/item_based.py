@@ -102,4 +102,4 @@ def get_rec_item(userID, genre = None):
     for z1 in rec_list:
         final_list.append(z1[0])
 
-    return final_list
+    return list(set(final_list))
