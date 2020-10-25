@@ -66,25 +66,26 @@ def recommend(userID, genre=None):
              not in user_movies: #Picking the movies that have similar watch history and rating >4
                 movie_list.append(um_rating[m].index[k])
     return set(movie_list), top_genre
-  
-  
-rec, top_genre = recommend(user_id, genre)
-movies_recommend = []
-for z in rec:
-    matched = 0
-    genres_for_z = movies.loc[movies['title']==z].iloc[0][2].split("|")
-    for g in genres_for_z:
-      if g in top_genre.keys():
-        matched += 1
+    
 
-    if matched == len(genres_for_z):
-      rat = avg_rating_df.loc[avg_rating_df['title']==z].iloc[0][0]
-      num_rat = avg_rating_df.loc[avg_rating_df['title']==z].iloc[0][1]
-      movies_recommend.append([z, rat, num_rat])
+def get_rec_user(user_id, genre = None):
+    rec, top_genre = recommend(user_id, genre)
+    movies_recommend = []
+    for z in rec:
+        matched = 0
+        genres_for_z = movies.loc[movies['title']==z].iloc[0][2].split("|")
+        for g in genres_for_z:
+          if g in top_genre.keys():
+            matched += 1
 
-rec_list = sorted(movies_recommend, key= lambda x: [-x[1], -x[2]])[:10]
-final_list = []
-for z1 in rec_list:
-    final_list.append(z1[0])
+        if matched == len(genres_for_z):
+          rat = avg_rating_df.loc[avg_rating_df['title']==z].iloc[0][0]
+          num_rat = avg_rating_df.loc[avg_rating_df['title']==z].iloc[0][1]
+          movies_recommend.append([z, rat, num_rat])
 
-return final_list
+    rec_list = sorted(movies_recommend, key= lambda x: [-x[1], -x[2]])[:10]
+    final_list = []
+    for z1 in rec_list:
+        final_list.append(z1[0])
+
+    return final_list
