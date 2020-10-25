@@ -41,8 +41,8 @@
 | | the files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up|4|
 | | multiple people contribute to discussions|4|
 || issues are discussed before they are closed|4|
-|| Chat channel: exists|2|
-|| Chat channel: is active |2|
+|| Chat channel: exists|4|
+|| Chat channel: is active |4|
 || Test cases:a large proportion of the issues related to handling failing cases.||
 | Zero internal boundaries | evidence that the whole team is using the same tools: everyone can get to all tools and files|4|
 | | evidence that the whole team is using the same tools (e.g. config files in the repo, updated by lots of different people)|4|
