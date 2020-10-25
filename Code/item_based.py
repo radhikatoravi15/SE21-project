@@ -7,30 +7,48 @@ import numpy as np
 import time
 import sys
 import warnings
+from collections import defaultdict
+from operator import itemgetter 
 
 # To make sure warnings are filtered out
 warnings.filterwarnings("ignore")
 
 col_name = ['user_id', 'item_id', 'ratings', 'timestamp']
 # Reading from input csv files and storing in data frames
-df = pd.read_csv('../SE21-project/data/ratings.csv')
-movies = pd.read_csv('../SE21-project/data/movies.csv')
+df = pd.read_csv('./data/ratings.csv')
+movies = pd.read_csv('./data/movies.csv')
 df = pd.merge(df, movies, on='movieId')
 avg_rating_df = pd.DataFrame(df.groupby('title')['rating'].mean())
 avg_rating_df['no_of_ratings'] = df.groupby('title')['rating'].count()
-avg_rating_df.head()
+avg_rating_df['title'] = avg_rating_df.index
 um_rating = df.pivot_table(index='userId', columns='title',
                            values='rating')
+
 rec_mov = pd.DataFrame()
 
 # Recommend function to output movies according to correlation 
 # to the movies present in database
-def recommend(userID):
+def recommend(userID, genre = None):
     global rec_mov
     user_rating = []
-    for i in um_rating.columns:
-        if um_rating[i][userID] >= 4:# Picking rating >4 movies
-            user_rating.extend([i])
+
+    if genre is None:
+        genres = defaultdict(int)
+        for i in um_rating.columns:
+            if um_rating[i][userID] >= 4:# Picking rating >4 movies
+                user_rating.extend([i])
+                temp = df.loc[df['title'] == i].iloc[0][5].split("|")
+                for t in temp:
+                    genres[t] += 1
+        
+        genres = dict(sorted(genres.items(), key=itemgetter(1), reverse=True)[:5])
+
+    else:
+        for i in um_rating.columns:
+            if um_rating[i][userID] >= 4:# Picking rating >4 movies
+                user_rating.extend([i])
+
+        genres = {genre: 0}
 
     user_rating_final = []
     for movie in user_rating:  # picking movies with >100 ratings
@@ -55,22 +73,30 @@ def recommend(userID):
                 rec_mov = rec_mov.append(record, ignore_index=True)
                 rec_mov = rec_mov.sort_values(by=['correlation'],
                     ascending=False)
-    return (user_rating, rec_mov['movie'])
 
-userID = int(sys.argv[1])
-if len(sys.argv) > 2:
-    print ('Error:Provide one user ID at a time as input on the command line!')
-    sys.exit(1)
-if userID > 610:
-    print ('Error: Wrong user ID!')
-    sys.exit(1)
+    return rec_mov['movie'], genres
+  
+  rec, genres = recommend(userID, genre)
 
-(watched, rec) = recommend(547)
-rec_list = []
-for y in rec:
-    rec_list.append(str(y))
-final_rec_list = []
-for z1 in rec_list:
-    print(z1)
-print('\n')
-print('Number of movies recommended for this user : ' + str(len(rec_list)))
+    rec_list = []
+    for y in rec:
+        genre_y = movies.loc[movies['title'] == y].iloc[0][2].split("|")
+        #print(genre_y)
+        matched_gen = 0
+        for g in genre_y:
+            if g in genres.keys():
+                matched_gen += 1
+        #print(matched_gen)
+        if matched_gen == len(genre_y):
+            matched_rat = avg_rating_df.loc[avg_rating_df['title'] == y].iloc[0][0]
+            matched__num_rat = avg_rating_df.loc[avg_rating_df['title'] == y].iloc[0][1]
+
+            rec_list.append((str(y), matched_rat, matched__num_rat))
+                
+
+    rec_list = sorted(rec_list, key = lambda x: [-x[1], -x[2]])[0:10]
+    final_list = []
+    for z1 in rec_list:
+        final_list.append(z1[0])
+
+    return final_list
