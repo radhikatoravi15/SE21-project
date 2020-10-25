@@ -76,27 +76,27 @@ def recommend(userID, genre = None):
 
     return rec_mov['movie'], genres
   
-  rec, genres = recommend(userID, genre)
+rec, genres = recommend(userID, genre)
 
-    rec_list = []
-    for y in rec:
-        genre_y = movies.loc[movies['title'] == y].iloc[0][2].split("|")
-        #print(genre_y)
-        matched_gen = 0
-        for g in genre_y:
-            if g in genres.keys():
-                matched_gen += 1
-        #print(matched_gen)
-        if matched_gen == len(genre_y):
-            matched_rat = avg_rating_df.loc[avg_rating_df['title'] == y].iloc[0][0]
-            matched__num_rat = avg_rating_df.loc[avg_rating_df['title'] == y].iloc[0][1]
+rec_list = []
+for y in rec:
+    genre_y = movies.loc[movies['title'] == y].iloc[0][2].split("|")
+    #print(genre_y)
+    matched_gen = 0
+    for g in genre_y:
+        if g in genres.keys():
+            matched_gen += 1
+    #print(matched_gen)
+    if matched_gen == len(genre_y):
+        matched_rat = avg_rating_df.loc[avg_rating_df['title'] == y].iloc[0][0]
+        matched__num_rat = avg_rating_df.loc[avg_rating_df['title'] == y].iloc[0][1]
 
-            rec_list.append((str(y), matched_rat, matched__num_rat))
-                
+        rec_list.append((str(y), matched_rat, matched__num_rat))
 
-    rec_list = sorted(rec_list, key = lambda x: [-x[1], -x[2]])[0:10]
-    final_list = []
-    for z1 in rec_list:
-        final_list.append(z1[0])
 
-    return final_list
+rec_list = sorted(rec_list, key = lambda x: [-x[1], -x[2]])[0:10]
+final_list = []
+for z1 in rec_list:
+    final_list.append(z1[0])
+
+return final_list
