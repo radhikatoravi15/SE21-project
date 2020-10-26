@@ -30,7 +30,7 @@
 || Use of code  formatters. |4|
 || Extensive Use of code  formatters. |2|
 || Use of syntax checkers. |4|
-|| Extensive use of syntax checkers. |0|
+|| Extensive use of syntax checkers. |2|
 || Use of code coverage |2|
 || Extensive use of code coverage |0|
 || other automated analysis tools|2|
@@ -43,7 +43,7 @@
 || issues are discussed before they are closed|4|
 || Chat channel: exists|4|
 || Chat channel: is active |4|
-|| Test cases:a large proportion of the issues related to handling failing cases.|2|
+|| Test cases:a large proportion of the issues related to handling failing cases.|4|
 | Zero internal boundaries | evidence that the whole team is using the same tools: everyone can get to all tools and files|4|
 | | evidence that the whole team is using the same tools (e.g. config files in the repo, updated by lots of different people)|4|
 | | evidence that the whole team is using the same tools (e.g. tutor can ask anyone to share screen, they demonstrate the system running on their computer)|4|
