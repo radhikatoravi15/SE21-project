@@ -15,6 +15,8 @@ def recommend_movie():
     genre = request.form['genre']
     approach = request.form['approach']
     response = None
+    if genre == 'N/A':
+        genre = None
     if approach == 'item-based':
         response = get_rec_item(int(userid), genre)
     elif approach == 'user-based':
