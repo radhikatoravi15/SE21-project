@@ -76,7 +76,6 @@ def recommend(userID, genre = None):
 
     return rec_mov['movie'], genres
   
-rec, genres = recommend(userID, genre)
 
 def get_rec_item(userID, genre = None):
     rec, genres = recommend(userID, genre)
