@@ -23,6 +23,7 @@ Collaborative Filtering</br>
 Item - Item Collaborative Filtering</br>
 User - user Collaborative Filtering</br>
 
+Also refer to the documentation.pdf to run the code and get your movies!
 Our Approach</br>
 There are two major approaches to implement recommendation systems: Content-Based and Collaborative Filtering.</br>
 In Content-Based, we only consider the users’ past history and recommend movies from the genres that they have liked in the past.</br> 
