@@ -1,3 +1,6 @@
+env:
+  global:
+    - CC_TEST_REPORTER_ID=c7bc801b8cb589fc75c2621bae56b34203196d78a6e69c288d63a6e5076012af
 language: python
 python:
   - "3.7.0"
@@ -6,6 +9,10 @@ install:
   - pip install -r requirements.txt
   - pip install pytest pytest-cov
   - pip install coveralls
+before_script:
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
 script:
   - python Code/item_testcases.py
   - python Code/user_testcases.py
@@ -13,5 +20,5 @@ script:
   - sbt clean coverage test
   
 after_success:
-  - sbt coveralls
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
   - coveralls
