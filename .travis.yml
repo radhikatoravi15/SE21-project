@@ -7,9 +7,8 @@ install:
   - pip install pytest pytest-cov
   - pip install coveralls
   - pip install coverage
+  - pip install codecov
 script:
-  - coverage run -m py.test Code/item_testcases.py
-  - coverage run -m py.test Code/user_testcases.py
-  - coverage run -m py.test Code/ensemble_testcases.py
+  - coverage run -m Code/item_testcases.py && coverage run -m Code/user_testcases.py && coverage run -m Code/ensemble_testcases.py && coverage report -m
 after_success:
   - bash <(curl -s https://codecov.io/bash)
