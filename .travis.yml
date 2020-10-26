@@ -10,6 +10,6 @@ install:
   - pip install codecov
   - pip install pycodestyle
 script:
-  - cd Code && coverage run -m item_testcases && coverage run -m user_testcases && coverage run -m ensemble_testcases && pytest && coverage report -m && cd ..
+  - cd Code && pytest && coverage run -m item_testcases && coverage run -m user_testcases && coverage run -m ensemble_testcases && coverage report -m && cd ..
 after_success:
   - bash <(curl -s https://codecov.io/bash)
