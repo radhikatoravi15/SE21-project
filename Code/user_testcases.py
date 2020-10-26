@@ -30,4 +30,3 @@ if __name__ == '__main__':
     import sys
     suite = unittest.TestLoader().loadTestsFromTestCase(TestAgent)
     unittest.TextTestRunner(verbosity=4,stream=sys.stderr).run(suite)
-© 
