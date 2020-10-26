@@ -13,6 +13,16 @@ Our video can be found [here on YouTube](https://youtu.be/j1aqT9Ic6_Y).
   
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/7oV19DRxJec/0.jpg)](https://www.youtube.com/watch?v=7oV19DRxJec)
 
+## Local Installation
+To be updated
+
+## Usage
+Our code has been packaged and distributed to Test PyPI. [Link](https://test.pypi.org/project/movie-recommender/0.0.1/). It can be downloaded as follows.
+```
+pip install -i https://test.pypi.org/simple/ movie-recommender==0.0.1
+```
+
+
 
 ## Documentation</br>
 Recommend a user with a set of movies that they might like by considering the movies they have liked in the past and also considering the movies liked by other users that have a similar taste like them.</br>
