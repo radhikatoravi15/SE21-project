@@ -8,6 +8,7 @@ install:
   - pip install coveralls
   - pip install coverage
   - pip install codecov
+  - pip install pycodestyle
 script:
   - cd Code && coverage run -m item_testcases && coverage run -m user_testcases && coverage run -m ensemble_testcases && coverage report -m && cd ..
 after_success:
