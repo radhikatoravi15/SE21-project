@@ -9,6 +9,8 @@ install:
 script:
   - python Code/item_testcases.py
   - python Code/user_testcases.py
-  - python Code/ensemble_testcases.py  
+  - python Code/ensemble_testcases.py 
+  - cd Code; pytest ensemble.py; 
+  - coverage run -m py.test ensemble.py; coverage report --omit="*/home/*,*urls.py"; cd ..
 after_success:
   - bash <(curl -s https://codecov.io/bash)

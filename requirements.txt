@@ -5,3 +5,4 @@ pyyaml
 numpy==1.18.5
 pandas==1.0.4
 Flask==1.1.2
+coverage
