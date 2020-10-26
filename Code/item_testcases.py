@@ -1,9 +1,15 @@
+import unittest 
+import os
+
+import nbimporter
 import item_based
 import user_based
-import unittest
 
-class TestAgent(unittest.TestCase):
+class TestAgent(unittest.TestCase): 
 
+    def setUp(self):        
+        print("Initialised unit test")
+    
     def test_item_based_genre(self):
         userId = 567
         genre = "Comedy"
@@ -17,8 +23,10 @@ class TestAgent(unittest.TestCase):
         expected = ['Doctor Who: A Christmas Carol (2010)', 'My Dinner with André (1981)', 'Day of the Doctor, The (2013)', "Guess Who's Coming to Dinner (1967)", 'Five Easy Pieces (1970)', 'Harakiri (Seppuku) (1962)', "Welcome to the Sticks (Bienvenue chez les Ch'tis) (2008)", 'Holy Mountain, The (Montaña sagrada, La) (1973)', 'Eddie Izzard: Dress to Kill (1999)', 'Celebration, The (Festen) (1998)']
         self.assertEqual(set(expected),set(ans))
     
-if __name__ == 'main':
+if __name__ == '__main__':
     main = TestAgent()
+
+    # This executes the unit test/(itself)
     import sys
     suite = unittest.TestLoader().loadTestsFromTestCase(TestAgent)
-    unittest.TextTestRunner(verbosity = 4, stream=ys.stderr).run(suite)
+    unittest.TextTestRunner(verbosity=4,stream=sys.stderr).run(suite)
