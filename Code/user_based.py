@@ -13,8 +13,8 @@ from operator import itemgetter
 warnings.filterwarnings("ignore")
 col_name = ['user_id', 'item_id', 'ratings', 'timestamp']
 # Reading from input csv files and storing in data frames
-df = pd.read_csv('./Code/ratings.csv')
-movies = pd.read_csv('./Code/movies.csv')
+df = pd.read_csv('./ratings.csv')
+movies = pd.read_csv('./movies.csv')
 df = pd.merge(df, movies, on='movieId')
 avg_rating_df = pd.DataFrame(df.groupby('title')['rating'].mean())
 avg_rating_df['no_of_ratings'] = df.groupby('title')['rating'].count()
