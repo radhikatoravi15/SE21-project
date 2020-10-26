@@ -24,12 +24,12 @@ avg_rating_df['title'] = avg_rating_df.index
 um_rating = df.pivot_table(index='userId', columns='title',
                            values='rating')
 
-rec_mov = pd.DataFrame()
+
 
 # Recommend function to output movies according to correlation 
 # to the movies present in database
 def recommend(userID, genre = None):
-    global rec_mov
+    rec_mov = pd.DataFrame()
     user_rating = []
 
     if genre is None:
