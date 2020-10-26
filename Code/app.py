@@ -2,14 +2,15 @@ from flask import Flask, request, render_template
 from ensemble import *
 from user_based import *
 from item_based import *
-app = Flask(__name__,template_folder='.')
+app = Flask(__name__, template_folder='.')
+
 
 @app.route("/")
 def landingpage():
     return render_template('landingPage.html')
 
 
-@app.route('/recommend',methods = ['POST'])
+@app.route('/recommend', methods=['POST'])
 def recommend_movie():
     userid = request.form['userid']
     genre = request.form['genre']
@@ -23,9 +24,8 @@ def recommend_movie():
         response = get_rec_user(int(userid), genre)
     elif approach == 'ensemble':
         response = ensemble(userid, genre)
-    return render_template('response.html',data = response)
+    return render_template('response.html', data=response)
 
 
 if __name__ == "__main__":
     app.run()
-
