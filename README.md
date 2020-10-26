@@ -6,7 +6,7 @@
 
 ### Movie Recommendation System (MovieBuddy)
 
-This repository is part of CSC 510 Software Engineering Project 2. It is a continuation of [Group 21's CSC 510 Software Engineering Project 1](https://github.com/jayeshjakkani/SE21-project)<br>
+This repository is part of CSC 510 Software Engineering Project 2. It is a continuation of [Group 21's CSC 510 Software Engineering Project 1](https://github.com/jayeshjakkani/SE21-project).<br>
 
 ## Project Video</br>
 Our video can be found [here on YouTube](https://youtu.be/j1aqT9Ic6_Y).
