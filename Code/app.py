@@ -1,7 +1,7 @@
 from flask import Flask, request, render_template
-from ensemble import *
-from user_based import *
-from item_based import *
+import ensemble
+import user_based 
+import item_based
 app = Flask(__name__, template_folder='.')
 
 
@@ -19,11 +19,11 @@ def recommend_movie():
     if genre == 'N/A':
         genre = None
     if approach == 'item-based':
-        response = get_rec_item(int(userid), genre)
+        response = item_based.get_rec_item(int(userid), genre)
     elif approach == 'user-based':
-        response = get_rec_user(int(userid), genre)
+        response = user_based.get_rec_user(int(userid), genre)
     elif approach == 'ensemble':
-        response = ensemble(userid, genre)
+        response = ensemble.ensemble(userid, genre)
     return render_template('response.html', data=response)
 
 
