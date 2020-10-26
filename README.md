@@ -1,4 +1,4 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![DOI](https://zenodo.org/badge/299652596.svg)](https://zenodo.org/badge/latestdoi/299652596) [![Build Status](https://travis-ci.com/bhoomi2807/SE21-project.svg?branch=master)](https://travis-ci.com/bhoomi2807/SE21-project) [![Coverage Status](https://coveralls.io/repos/github/bhoomi2807/SE21-project/badge.svg?branch=master)](https://coveralls.io/github/bhoomi2807/SE21-project?branch=master)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![DOI](https://zenodo.org/badge/299652596.svg)](https://zenodo.org/badge/latestdoi/299652596) [![Build Status](https://travis-ci.com/bhoomi2807/SE21-project.svg?branch=master)](https://travis-ci.com/bhoomi2807/SE21-project) [![Coverage Status](https://coveralls.io/repos/github/bhoomi2807/SE21-project/badge.svg?branch=master)](https://coveralls.io/github/bhoomi2807/SE21-project?branch=master) ![Code Climate maintainability](https://img.shields.io/codeclimate/maintainability/bhoomi2807/SE21-project)
 
 # SE21-Project</br>
 Movie Recommendation System (Moviebuddy)
