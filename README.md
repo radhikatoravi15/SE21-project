@@ -1,14 +1,20 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![DOI](https://zenodo.org/badge/299652596.svg)](https://zenodo.org/badge/latestdoi/299652596) [![Build Status](https://travis-ci.com/bhoomi2807/SE21-project.svg?branch=master)](https://travis-ci.com/bhoomi2807/SE21-project) [![Coverage Status](https://coveralls.io/repos/github/bhoomi2807/SE21-project/badge.svg?branch=master)](https://coveralls.io/github/bhoomi2807/SE21-project?branch=master) ![Code Climate maintainability](https://img.shields.io/codeclimate/maintainability/bhoomi2807/SE21-project)
+# NCSU CSC-510 Software Engineering Project 2 GROUP-4 
 
-# SE21-Project</br>
-Movie Recommendation System (Moviebuddy)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![DOI](https://zenodo.org/badge/299652596.svg)](https://zenodo.org/badge/latestdoi/299652596) [![Build Status](https://travis-ci.com/bhoomi2807/SE21-project.svg?branch=master)](https://travis-ci.com/bhoomi2807/SE21-project) [![Coverage Status](https://coveralls.io/repos/github/bhoomi2807/SE21-project/badge.svg?branch=master)](https://coveralls.io/github/bhoomi2807/SE21-project?branch=master) 
 
-# Project Video</br>
-Our video can be found [here on YouTube](https://www.youtube.com/watch?v=7oV19DRxJec).<br/>
+![Code Climate maintainability](https://img.shields.io/codeclimate/maintainability/bhoomi2807/SE21-project) ![Code Climate technical debt](https://img.shields.io/codeclimate/tech-debt/bhoomi2807/SE21-project) ![YouTube Video Views](https://img.shields.io/youtube/views/7oV19DRxJec?style=social)
+
+### Movie Recommendation System (MovieBuddy)
+
+This repository is part of CSC 510 Software Engineering Project 2. It is a continuation of [Group 21's CSC 510 Software Engineering Project 1](https://github.com/jayeshjakkani/SE21-project)<br>
+
+## Project Video</br>
+Our video can be found [here on YouTube](https://youtu.be/j1aqT9Ic6_Y).
+  
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/7oV19DRxJec/0.jpg)](https://www.youtube.com/watch?v=7oV19DRxJec)
 
 
-# Documentation</br>
+## Documentation</br>
 Recommend a user with a set of movies that they might like by considering the movies they have liked in the past and also considering the movies liked by other users that have a similar taste like them.</br>
 </br>
 Approaches:</br>
@@ -61,8 +67,8 @@ Join Us In Phase -2 to build Moviebuddy that would in-turn help us during this P
 5. [Rohan Pillai](mailto:rspillai@ncsu.edu) (rspillai)<br>
 
 ## Original Contributors</br>
-Ashish Sadanand Rajpurohit</br>
-Jayesh Chandrashekhar Jakkani</br>
-Katta Rishabh</br>
-Keertikumar Malagund</br>
-Sathwik Kalvakuntla</br>
+1. Ashish Sadanand Rajpurohit</br>
+2. Jayesh Chandrashekhar Jakkani</br>
+3. Katta Rishabh</br>
+4. Keertikumar Malagund</br>
+5. Sathwik Kalvakuntla</br>
