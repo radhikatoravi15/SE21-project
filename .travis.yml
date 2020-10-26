@@ -17,7 +17,6 @@ script:
   - python Code/item_testcases.py
   - python Code/user_testcases.py
   - python Code/ensemble_testcases.py
-  - sbt clean coverage test
   
 after_success:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
