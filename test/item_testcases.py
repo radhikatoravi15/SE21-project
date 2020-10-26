@@ -1,41 +1,24 @@
-import os
-import filecmp
+import item_based
+import user_based
+import unittest
 
-# Comparison between two output file to check their similarity
-def check_diff(file1,file2):
-    check = {}
-    for file in [file1,file2]:
-        with open(file,'r',  encoding = "ISO-8859-1") as f:
-            check[file] = []
-            for line in f:
-                check[file].append(line)
-    diff = set(check[file1]) - set(check[file2])
-    if diff:
-        return(0)
-    return(1)
+class TestAgent(unittest.TestCase):
 
-# Different test case parameter in form of input array (these inputs represent user ID)
-input_arr = ["34","547","650","14 12"]
-
-# Parameter to monitor which test case failed
-flag = 0
-
-# Returns the status of the test case and sumarizes the scenario 
-for i in range(len(input_arr)):
-    os.system("python3 Code/item_based.py %s > item_original_output%s.txt" %(input_arr[i],i))
-    os.system("python3 Code/item_based_test.py %s > item_test_output%s.txt" %(input_arr[i],i))
-    file1="item_original_output"+str(i)+".txt"
-    file2="item_test_output"+str(i)+".txt"
-    comp=check_diff(file1,file2)
+    def test_item_based_genre(self):
+        userId = 567
+        genre = "Comedy"
+        ans = item_based.get_rec_item(userId,genre)
+        expected = ["Welcome to the Sticks (Bienvenue chez les Ch'tis) (2008)", 'Eddie Izzard: Dress to Kill (1999)', "Dave Chappelle: For What it's Worth (2004)", 'Broadway Danny Rose (1984)', 'Everybody Wants Some (2016)', 'Palm Beach Story, The (1942)', 'Zelig (1983)', 'Dish, The (2001)', 'Stir Crazy (1980)', 'Yesterday, Today and Tomorrow (Ieri, oggi, domani) (1963)']
+        self.assertEqual(set(expected),set(ans))
     
-    # 
-    if comp:
-        print("Test case "+str(i+1)+" passed")
-        flag+=1
-    else:
-        print("Test case "+str(i+1)+" failed")
-        
-if flag == len(input_arr):      
-    print("All Test cases passed")
-else:
-    print(str(flag)+" out of "+str(len(input_arr))+" Test cases passed")
+    def test_item_based(self):
+        userId = 567
+        ans = item_based.get_rec_item(userId)
+        expected = ['Doctor Who: A Christmas Carol (2010)', 'My Dinner with André (1981)', 'Day of the Doctor, The (2013)', "Guess Who's Coming to Dinner (1967)", 'Five Easy Pieces (1970)', 'Harakiri (Seppuku) (1962)', "Welcome to the Sticks (Bienvenue chez les Ch'tis) (2008)", 'Holy Mountain, The (Montaña sagrada, La) (1973)', 'Eddie Izzard: Dress to Kill (1999)', 'Celebration, The (Festen) (1998)']
+        self.assertEqual(set(expected),set(ans))
+    
+if __name__ == 'main':
+    main = TestAgent()
+    import sys
+    suite = unittest.TestLoader().loadTestsFromTestCase(TestAgent)
+    unittest.TextTestRunner(verbosity = 4, stream=ys.stderr).run(suite)
