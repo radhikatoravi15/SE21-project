@@ -10,6 +10,8 @@ script:
   - python Code/item_testcases.py
   - python Code/user_testcases.py
   - python Code/ensemble_testcases.py
+  - sbt clean coverage test
   
 after_success:
+  - sbt coveralls
   - coveralls
