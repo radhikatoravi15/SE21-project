@@ -14,7 +14,26 @@ Our video can be found [here on YouTube](https://youtu.be/j1aqT9Ic6_Y).
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/7oV19DRxJec/0.jpg)](https://www.youtube.com/watch?v=7oV19DRxJec)
 
 ## Local Installation
-To be updated
+To run this project locally, you need to follow the below steps:<br>
+NOTE: Make sure you have git and Python installed.
+  * [Git Installation Guide](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+  * [Python Installation Guide](https://wiki.python.org/moin/BeginnersGuide/Download)
+1. Clone the repository
+```
+git clone https://github.com/bhoomi2807/SE21-project.git
+```
+2. Go the the repository
+```
+cd SE21-project
+```
+3. Make sure you have all the dependencies installed.
+```
+pip install -r requirements.txt
+```
+4. On a Command Prompt/Terminal, run ```app.py```.
+```
+python app.py
+```
 
 ## Usage
 Our code has been packaged and distributed to Test PyPI. [Link](https://test.pypi.org/project/movie-recommender/0.0.1/). It can be downloaded as follows.
