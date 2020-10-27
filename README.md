@@ -45,26 +45,21 @@ pip install -i https://test.pypi.org/simple/ movie-recommender==0.0.1
 Find the point descriptions of each class/function as well as instructions to run the project [here](https://github.com/bhoomi2807/SE21-project/blob/master/Documentation.pdf).
 
 ## Description</br>
-Recommend a user with a set of movies that they might like by considering the movies they have liked in the past and also considering the movies liked by other users that have a similar taste like them.</br>
-</br>
+Recommend a user with a set of movies that they might like by considering the movies they have liked in the past and also considering the movies liked by other users that have a similar taste like them.
+
 #### Approaches
 1. Content-Based</br>
 2. Collaborative Filtering</br>
   * Item - Item Collaborative Filtering</br>
   * User - user Collaborative Filtering</br>
 
-There are two major approaches to implement recommendation systems: <b>Content-Based</b> and <b>Collaborative Filtering</b>.</br>
-In Content-Based, we only consider the users’ past history and recommend movies from the genres that they have liked in the past.</br> 
-In this project, we have implemented Collaborative Filtering (CF). Collaborative filtering has two types: Item-Item CF and User-User CF.</br> 
-
-In Item-Item CF, we recommend the items that are most similar to the items liked by the user. Whereas, in User-User CF, we recommend the items liked by the users that are similar to the user we want to make a recommendation for.</br>
+There are two major approaches to implement recommendation systems: <b>Content-Based</b> and <b>Collaborative Filtering</b>. In Content-Based, we only consider the users’ past history and recommend movies from the genres that they have liked in the past. In this project, we have implemented Collaborative Filtering (CF). Collaborative filtering has two types: Item-Item CF and User-User CF.
+<br>
+In Item-Item CF, we recommend the items that are most similar to the items liked by the user. Whereas, in User-User CF, we recommend the items liked by the users that are similar to the user we want to make a recommendation for.
 
 #### Use Cases
-</br>
 Based on the Genre(Content Based) :</br>
-Let’s consider Lisa’s favourite genre is Horror and she has watched Annabelle and The Conjuring.</br>
-So, now Lisa would be getting suggestions IT, Us and Get Out which are of  same Genre.</br>
-
+Let’s consider Lisa’s favourite genre is Horror and she has watched Annabelle and The Conjuring. So, now Lisa would be getting suggestions IT, Us and Get Out which are of same Genre.
 </br>
 Based on the movies liked (Item - Item Collaborative Filtering):</br>
 Let’s say Bhoomi has watched Seven and Shutter Island and she has rated both movies 5 out of 5.</br>
@@ -74,15 +69,11 @@ Shutter Island - 5/5</br>
 The Prestige - 5/5</br>
 Inception - 5/5</br>
 Hitman - 2/5</br>
-So, according to the movie recommendation system, it uses Collaborative Filtering to get the movies from the database to get the movies which have a good rating and have been rated by a good number of users and then gives the suggestion to Bhoomi with the movies :</br>
-The Prestige & Inception.</br>
+So, according to the movie recommendation system, it uses Collaborative Filtering to get the movies from the database to get the movies which have a good rating and have been rated by a good number of users and then gives the suggestion to Bhoomi with the movies: The Prestige & Inception.</br>
 </br>
 
 Based on watch history (User - User Collaborative Filtering):</br>
-Let’s consider Bhoomi has watched Avenger’s Infinity War and has given a rating of 5.</br>
-Now, let’s consider Juliet has watched movies Avenger’s Infinity War and Avenger’s Endgame and has rated both the movies very well (5/5).</br>
-Now, according to the movie recommendation system, it uses Collaborative Filtering to get the movies from the other movies from different user’s with highest correlation and good rating and gives Bhoomi the suggestion to watch Avenger’s Endgame.</br>
-</br>
+Let’s consider Bhoomi has watched Avenger’s Infinity War and has given a rating of 5. Now, let’s consider Juliet has watched movies Avenger’s Infinity War and Avenger’s Endgame and has rated both the movies very well (5/5). Now, according to the movie recommendation system, it uses Collaborative Filtering to get the movies from the other movies from different user’s with highest correlation and good rating and gives Bhoomi the suggestion to watch Avenger’s Endgame.</br>
 
 Join us in Phase - 3 to build MovieBuddy that would in-turn help us during this Pandemic. Cheers!</br>
 
