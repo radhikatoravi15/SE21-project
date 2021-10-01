@@ -1,6 +1,6 @@
 # NCSU CSC-510 Software Engineering Project 2 GROUP-4 
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![DOI](https://zenodo.org/badge/299652596.svg)](https://zenodo.org/badge/latestdoi/299652596) [![Build Status](https://travis-ci.com/bhoomi2807/SE21-project.svg?branch=master)](https://travis-ci.com/bhoomi2807/SE21-project) ![Codecov](https://img.shields.io/codecov/c/github/bhoomi2807/SE21-project) 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![DOI](https://zenodo.org/badge/299652596.svg)](https://zenodo.org/badge/latestdoi/299652596) [![Build Status](https://app.travis-ci.com/radhikatoravi15/SE21-project.svg?branch=master)](https://app.travis-ci.com/radhikatoravi15/SE21-project) ![Codecov](https://img.shields.io/codecov/c/github/bhoomi2807/SE21-project) 
 
 <a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a> ![Code Climate maintainability](https://img.shields.io/codeclimate/maintainability/bhoomi2807/SE21-project) ![Code Climate technical debt](https://img.shields.io/codeclimate/tech-debt/bhoomi2807/SE21-project) ![YouTube Video Views](https://img.shields.io/youtube/views/7oV19DRxJec?style=social)
 
